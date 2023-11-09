@@ -18,6 +18,7 @@ services:
             LABEL_STUDIO_URL: "http://data-label-studio:8080"
         depends_on:
             - data-label-studio
+            - nginx-label-studio
     data-label-studio:
         image: heartexlabs/label-studio:latest
         container_name: data-label-studio
@@ -40,3 +41,5 @@ services:
             - 80:80
         volumes:
             - ../nginx.conf:/etc/nginx/nginx.conf
+        depends_on:
+            - data-label-studio 
