@@ -28,7 +28,7 @@ services:
             - ../../secrets:/secrets
         environment:
             LABEL_STUDIO_DISABLE_SIGNUP_WITHOUT_LINK: "true"
-            LABEL_STUDIO_USERNAME: "admin@admin.com"
+            LABEL_STUDIO_USERNAME: "tannerjmarsh@gmail.com"
             LABEL_STUDIO_PASSWORD: "awesome"
             GOOGLE_APPLICATION_CREDENTIALS: /secrets/data-service-account.json
             GCP_PROJECT: "ads-chat-data"
