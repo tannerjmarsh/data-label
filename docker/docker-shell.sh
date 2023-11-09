@@ -14,4 +14,4 @@ if [[ "$1" == "--fresh" ]]; then
 fi
 
 # Run All Containers
-docker-compose run --rm --service-ports data-label-cli
+docker compose run --rm --service-ports data-label-cli
