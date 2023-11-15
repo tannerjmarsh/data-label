@@ -18,12 +18,10 @@ services:
             LABEL_STUDIO_URL: "http://data-label-studio:8080"
         depends_on:
             - data-label-studio
-            - nginx-label-studio
+            - nginx
     data-label-studio:
         image: heartexlabs/label-studio:latest
         container_name: data-label-studio
-        # ports:
-        #     - 80:8080 # map port 80 on the host to port 8080 in the container
         volumes:
             - ./docker-volumes/label-studio:/label-studio/data
             - ../../secrets:/secrets
