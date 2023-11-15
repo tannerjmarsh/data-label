@@ -1,0 +1,13 @@
+<View>
+  <Header value="Solr Query"/>
+  <Text name="solr_query" value="$solr" editable="false" toName="natural_query"/>
+
+  <Header value="Natural Language Query"/>
+  <Text name="natural_query" value="$gen_text" editable="false" toName="natural_query"/>
+
+  <Header value="Rate the accuracy of the translation"/>
+  <Rating name="rating" toName="natural_query" maxRating="5"/>
+
+  <Header value="Edit the translation for correctness or style"/>
+  <TextArea name="edited_query" toName="natural_query" value="$gen_text" editable="true" rows="5"/>
+</View>
