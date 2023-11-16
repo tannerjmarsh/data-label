@@ -17,4 +17,4 @@ fi
 # docker pull tanner3030/data-label-cli
  
 # Run All Containers
-# docker compose run --rm --service-ports data-label-cli
+docker compose run --rm --service-ports data-label-cli

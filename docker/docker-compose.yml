@@ -6,7 +6,7 @@ networks:
 services:
     data-label-cli:
         image: data-label-cli
-        container_name: data-label-cli
+        container_name: tanner3030/data-label-cli
         volumes:
             - ../../secrets:/secrets
             - ../data-labeling-cli:/app
